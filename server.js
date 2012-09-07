@@ -5,7 +5,7 @@ var port = 80,
     host = '0.0.0.0';
 
 var options = {
-    root: '.',
+    root: './public',
     autoIndex: true,
     cache: true
 };
