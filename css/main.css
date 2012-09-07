@@ -1,0 +1,221 @@
+/*main.css*/
+
+.quiet a{
+    color: #666666;
+}
+
+body{
+    color: #333;
+    font-size: 14px;
+}
+
+#ucontent div.column{
+    /*text-align: justify;*/
+}
+
+#ucontent div.column p{
+    text-indent: 3em;
+}
+
+h1, h2, h3, h4{
+    color: #000;
+    font-family: Georgia;
+    text-shadow: 1px 1px 2px #CCC;   
+}
+
+#uwrap{
+    /*border-bottom: #008ace 5px solid;*/
+    /*padding-bottom: 3em;*/
+}
+
+#bwrap{
+    padding-top: 3em;
+}
+
+#uheader h1{
+    padding-top: 0.5em;
+}
+
+#ucontent h2{
+    font-style: italic;
+}
+
+#content{
+    height: 400px;
+}
+ul.menu{
+    margin-left: 0px;
+}
+
+ul.menu li{
+    list-style: none;
+}
+
+ul.adress li{
+    margin-bottom: 0.7em;
+}
+
+div.colborder{
+    border-right: 0;
+}
+
+.right{
+    text-align: right;
+}
+
+.whiteide{
+    background: url(../images/whitelogo_bg.jpg) no-repeat center center;
+}
+
+/* root element for scrollable */
+div.scrollable {  
+	position: relative;
+	overflow: hidden;		
+	height: 294px;	 
+	width: 348px;	
+}
+
+/* root element for scrollable items */
+div.scrollable div.items {	
+	position: absolute;	
+	/*height: 20000em;*/
+}
+
+div.scrollable div.items{
+    text-align: left;
+}
+
+a.prev{
+    display: block;
+    background: url(../images/uarr.png) no-repeat;
+    background-position: left top;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    margin: 0 0 5px 166px;
+}
+
+a.next{
+    display: block;
+    background: url(../images/darr.png) no-repeat;
+    background-position: left top;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    margin: 5px 0 1.5em 166px;
+}
+
+a.disabled{
+    background-position: right top;
+    cursor: default;
+}
+
+a{
+    color: #0162FA;
+}
+
+a:hover{
+    color: #62B8F5;
+}
+
+a:visited{
+    color: #777;
+}
+
+#taglist a{
+    color: #777;
+}
+
+#taglist a:hover{
+    color: #FFF;
+    background: #3E96FF;
+    text-decoration: none;
+}
+
+#taglist a:visited{
+    color: #EEE;
+    background: #777;
+    text-decoration: none;
+}
+
+img.vcard-qr-code{
+    margin-top: 1em;
+}
+
+
+.vcard .x-icq{
+    background: url(../images/icon/icq.png) no-repeat;
+    padding-left: 22px;
+}
+
+.vcard .x-jabber{
+    background: url(../images/icon/jabber.png) no-repeat;
+    padding-left: 22px;
+}
+
+.vcard .x-skype-username{
+    background: url(../images/icon/skype.png) no-repeat;
+    padding-left: 22px;
+}
+
+.vcard .tel{
+    background: url(../images/icon/tel.png) no-repeat;
+    padding-left: 22px;
+}
+
+.vcard .x-moikrug{
+    background: url(../images/icon/moikrug.png) no-repeat;
+    padding-left: 22px;
+} 
+
+.vcard .x-habrahabr{
+    background: url(../images/icon/habrahabr.png) no-repeat;
+    padding-left: 22px;
+} 
+
+.vcard .x-free-lance{
+    background: url(../images/icon/free-lance.png) no-repeat;
+    padding-left: 22px;
+}
+
+.vcard .x-github{
+    background: url(https://github.com/favicon.ico) no-repeat;
+    padding-left: 22px;
+}
+
+.vcard-source{
+    background: url(../images/icon/vcard.png) no-repeat;
+    padding-left: 22px;
+}
+
+a.vcard-qr-code{
+    background: url(../images/icon/qrcode.png) no-repeat;
+    padding-left: 22px;
+}
+
+a {
+    -moz-transition-property: color, background-color;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease-out;
+
+    -webkit-transition-property: color, background-color;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+
+    -o-transition-property: color, background-color;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease-out;
+}
+
+#cheader:hover {
+    background: #333;
+    border-top: #444 5px solid;
+    border-bottom: #444 5px solid;
+    outline: 5px solid #555;
+}
+
+h3, h4 {
+    color: #333;
+}
+
+/* EOF */
