@@ -67,6 +67,25 @@ div.colborder{
     background: url(../images/whitelogo_bg.jpg) no-repeat center center;
 }
 
+.project {
+    outline-color: #fff;
+}
+
+.project:hover {
+    background: #fcf9e8;
+    outline: 10px #fcf9e8 solid;
+    color: #000;
+
+    /*FF Bug*/
+    border-left: 3px solid #fcf9e8;
+    border-top: 4px solid #fcf9e8;
+    margin: -4px 0 0 -3px;
+}
+
+.project:hover h3 {
+    color: #000;
+}
+
 /* root element for scrollable */
 div.scrollable {  
 	position: relative;
@@ -193,18 +212,22 @@ a.vcard-qr-code{
     padding-left: 22px;
 }
 
-a {
-    -moz-transition-property: color, background-color;
+a, .project {
+    -moz-transition-property: color, background-color, outline-color, outline-width;
     -moz-transition-duration: 0.3s;
     -moz-transition-timing-function: ease-out;
 
-    -webkit-transition-property: color, background-color;
+    -webkit-transition-property: color, background-color, outline-color, outline-width;
     -webkit-transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
 
-    -o-transition-property: color, background-color;
+    -o-transition-property: color, background-color, outline-color, outline-width;
     -o-transition-duration: 0.3s;
     -o-transition-timing-function: ease-out;
+
+    transition-property: color, background-color, outline-color, outline-width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
 }
 
 #cheader:hover {
