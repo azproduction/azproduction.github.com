@@ -198,7 +198,7 @@ img.vcard-qr-code{
 }
 
 .vcard .x-github{
-    background: url(https://github.com/favicon.ico) no-repeat;
+    background: url(../images/icon/github.png) no-repeat;
     padding-left: 22px;
 }
 
