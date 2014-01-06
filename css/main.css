@@ -9,23 +9,13 @@ body{
     font-size: 14px;
 }
 
-#ucontent div.column{
-    /*text-align: justify;*/
-}
-
 #ucontent div.column p{
     text-indent: 3em;
 }
 
 h1, h2, h3, h4{
     color: #000;
-    font-family: Georgia;
     text-shadow: 1px 1px 2px #CCC;   
-}
-
-#uwrap{
-    /*border-bottom: #008ace 5px solid;*/
-    /*padding-bottom: 3em;*/
 }
 
 #bwrap{
@@ -69,21 +59,6 @@ div.colborder{
 
 .project {
     outline-color: #fff;
-}
-
-.project:hover {
-    background: #fcf9e8;
-    outline: 10px #fcf9e8 solid;
-    color: #000;
-
-    /*FF Bug*/
-    border-left: 3px solid #fcf9e8;
-    border-top: 4px solid #fcf9e8;
-    margin: -4px 0 0 -3px;
-}
-
-.project:hover h3 {
-    color: #000;
 }
 
 /* root element for scrollable */
@@ -212,33 +187,70 @@ a.vcard-qr-code{
     padding-left: 22px;
 }
 
-a, .project {
-    -moz-transition-property: color, background-color, outline-color, outline-width;
-    -moz-transition-duration: 0.3s;
-    -moz-transition-timing-function: ease-out;
-
-    -webkit-transition-property: color, background-color, outline-color, outline-width;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-
-    -o-transition-property: color, background-color, outline-color, outline-width;
-    -o-transition-duration: 0.3s;
-    -o-transition-timing-function: ease-out;
-
-    transition-property: color, background-color, outline-color, outline-width;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-
-#cheader:hover {
-    background: #333;
-    border-top: #444 5px solid;
-    border-bottom: #444 5px solid;
-    outline: 5px solid #555;
-}
-
 h3, h4 {
     color: #333;
+}
+
+@media screen and (max-width:540px) {
+    .fork-me {
+        display: none;
+    }
+
+    div.container {
+        width: 100% !important;
+    }
+
+    div.column {
+        float: none;
+        width: 100% !important;
+    }
+
+    div.block {
+        width: 100% !important;
+    }
+
+    .vcard-qr-code {
+        width: 100%;
+        -webkit-image-rendering: crisp-edges;
+           -moz-image-rendering: crisp-edges;
+            -ms-image-rendering: crisp-edges;
+                image-rendering: crisp-edges;
+
+    }
+
+    body {
+        padding: 25px;
+        margin: 0;
+    }
+
+    #uheader h1 {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    a.next,
+    a.prev {
+        width: 32px;
+        height: 32px;
+        background-size: 200%;
+        margin: 10px auto;
+    }
+
+    div.scrollable {
+        width: 100%
+    }
+
+    img {
+        width: 100%
+    }
 }
 
 /* EOF */
